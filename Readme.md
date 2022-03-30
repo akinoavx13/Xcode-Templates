@@ -1,6 +1,19 @@
 # 📑 Xcode File Template
 
-An Xcode file template that generates multiple files with boilerplate code required for setting up a scene using MVVMC.
+Some Xcode file templates that generates multiple files with boilerplate code required for setting up:
+* Scene with MVVMC
+* Scene with MVVM
+* Coordinator
+
+**BONUS**
+
+Some snippets are also includes:
+* `// MARK: - Outlets`
+* `// MARK: - Properties`
+* `// MARK: - Lifecycle`
+* `// MARK: - Methods`
+* `// MARK: - Actions`
+* `// MARK: - Body`
 
 ## 📦 Installation
 
