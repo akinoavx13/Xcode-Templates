@@ -11,7 +11,7 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>SortOrder</key>
-	<string>3</string>
+	<string>4</string>
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.swift</string>
 </dict>
