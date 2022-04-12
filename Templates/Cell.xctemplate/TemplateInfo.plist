@@ -11,7 +11,7 @@
     <key>Kind</key>
     <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
     <key>SortOrder</key>
-	<string>3</string>
+	<string>5</string>
     <key>Options</key>
 	<array>
 		<dict>

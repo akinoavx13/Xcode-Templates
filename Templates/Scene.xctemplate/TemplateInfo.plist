@@ -11,7 +11,7 @@
     <key>Kind</key>
     <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
     <key>SortOrder</key>
-	<string>2</string>
+	<string>1</string>
     <key>Options</key>
 	<array>
 		<dict>
@@ -38,7 +38,7 @@
 		</dict>
         <dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Coordinator</string>
+			<string>___VARIABLE_sceneName:identifier___SceneCoordinator</string>
 			<key>Description</key>
 			<string>The coordinator name</string>
 			<key>Identifier</key>
@@ -52,7 +52,7 @@
 		</dict>
         <dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewModel</string>
+			<string>___VARIABLE_sceneName:identifier___SceneViewModel</string>
 			<key>Description</key>
 			<string>The view model name</string>
 			<key>Identifier</key>
@@ -66,13 +66,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___Scene</string>
 			<key>Description</key>
-			<string>The view controller name</string>
+			<string>The scene name</string>
 			<key>Identifier</key>
-			<string>viewControllerName</string>
+			<string>viewName</string>
 			<key>Name</key>
-			<string>View Controller Name:</string>
+			<string>Scene Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -80,13 +80,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewController</string>
+			<string>___VARIABLE_sceneName:identifier___SceneDIContainer</string>
 			<key>Description</key>
-			<string>The Xib name</string>
+			<string>The DIContainer name</string>
 			<key>Identifier</key>
-			<string>xibName</string>
+			<string>diContainerName</string>
 			<key>Name</key>
-			<string>Xib Name:</string>
+			<string>DIContainer Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
