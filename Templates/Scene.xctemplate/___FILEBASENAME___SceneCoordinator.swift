@@ -8,7 +8,7 @@
 
 import UIKit.UINavigationController
 import SwiftUI
-import SPCore
+import Core
 
 protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject { }
 
@@ -32,7 +32,8 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     
     // MARK: - Methods
     
-    func start() {
+    @MainActor
+    func start(params: Any) {
         let viewModel = ___VARIABLE_sceneName___SceneViewModel()
         viewModel.coordinator = self
         

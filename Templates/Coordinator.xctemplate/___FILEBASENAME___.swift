@@ -20,9 +20,8 @@ protocol ___FILEBASENAME___Protocol: AnyObject {
     
     // MARK: - Methods
     
-    func start()
+    func start(params: Any...)
     func stop()
-    func navigate(to route: ___FILEBASENAME___Route)
 }
 
 // MARK: - ChildDidStop -
