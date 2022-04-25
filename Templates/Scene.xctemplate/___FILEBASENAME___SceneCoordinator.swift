@@ -12,12 +12,12 @@ import Core
 
 protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject { }
 
-final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
+public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     
     // MARK: - Properties
     
-    var parentCoordinator: CoordinatorProtocol?
-    var children: [CoordinatorProtocol] = []
+    public var parentCoordinator: CoordinatorProtocol?
+    public var children: [CoordinatorProtocol] = []
     
     private let navigationController: UINavigationController
     private let dependencies: ___VARIABLE_sceneName___SceneCoordinatorDependencies
@@ -33,7 +33,7 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Methods
     
     @MainActor
-    func start(params: Any...) {
+    public func start(params: Any...) {
         let viewModel = ___VARIABLE_sceneName___SceneViewModel()
         viewModel.coordinator = self
         
@@ -43,5 +43,5 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
                                                 animated: false)
     }
     
-    func stop() { fatalError("Should not be stopped.") }
+    public func stop() { fatalError("Should not be stopped.") }
 }
