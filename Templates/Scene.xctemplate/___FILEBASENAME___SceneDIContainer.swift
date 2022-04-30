@@ -23,7 +23,7 @@ public final class ___VARIABLE_sceneName___SceneDIContainer {
     
     // MARK: - Lifecycle
     
-    init(dependencies: Dependencies) {
+    public init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
     
