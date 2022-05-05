@@ -33,7 +33,7 @@ public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol
     // MARK: - Methods
     
     @MainActor
-    public func start(params: Any...) {
+    public func start(params: Any?...) {
         let viewModel = ___VARIABLE_sceneName___SceneViewModel()
         viewModel.coordinator = self
         

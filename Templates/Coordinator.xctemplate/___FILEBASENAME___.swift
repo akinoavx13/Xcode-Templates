@@ -20,7 +20,7 @@ protocol ___FILEBASENAME___Protocol: AnyObject {
     
     // MARK: - Methods
     
-    func start(params: Any...)
+    func start(params: Any?...)
     func stop()
 }
 
