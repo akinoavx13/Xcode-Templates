@@ -6,17 +6,12 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import UIKit.UINavigationController
-
-protocol ___FILEBASENAME___Route { }
-
-protocol ___FILEBASENAME___Protocol: AnyObject {
+public protocol CoordinatorProtocol: AnyObject {
     
     // MARK: - Properties
     
-    var parentCoordinator: ___FILEBASENAME___Protocol? { get set }
-    var children: [___FILEBASENAME___Protocol] { get set }
-    var navigationController: UINavigationController { get set }
+    var parentCoordinator: CoordinatorProtocol? { get set }
+    var children: [CoordinatorProtocol] { get set }
     
     // MARK: - Methods
     
@@ -26,8 +21,8 @@ protocol ___FILEBASENAME___Protocol: AnyObject {
 
 // MARK: - ChildDidStop -
 
-extension CoordinatorProtocol {
-    func childDidStop(_ child: ___FILEBASENAME___Protocol?) {
+public extension CoordinatorProtocol {
+    func childDidStop(_ child: CoordinatorProtocol?) {
         for (index, coordinator) in children.enumerated() where coordinator === child {
             children.remove(at: index)
         }
