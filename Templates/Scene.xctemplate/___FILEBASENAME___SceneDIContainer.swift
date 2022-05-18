@@ -37,4 +37,19 @@ public final class ___VARIABLE_sceneName___SceneDIContainer {
 
 // MARK: - ___VARIABLE_sceneName___SceneCoordinatorDependencies -
 
-extension ___VARIABLE_sceneName___SceneDIContainer: ___VARIABLE_sceneName___SceneCoordinatorDependencies { }
+extension ___VARIABLE_sceneName___SceneDIContainer: ___VARIABLE_sceneName___SceneCoordinatorDependencies {
+
+// MARK: - Methods
+    
+    @MainActor
+    func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel {
+        let viewModel = ___VARIABLE_sceneName___SceneViewModel()
+        viewModel.coordinator = coordinator
+        
+        return viewModel
+    }
+        
+    func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene {
+        ___VARIABLE_sceneName___Scene(viewModel: viewModel)
+    }
+}

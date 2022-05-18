@@ -10,7 +10,13 @@ import UIKit.UINavigationController
 import SwiftUI
 import Core
 
-protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject { }
+protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject {
+
+    // MARK: - Methods
+    
+    func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel
+    func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene
+}
 
 public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     
@@ -34,10 +40,10 @@ public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol
     
     @MainActor
     public func start(params: Any?...) {
-        let viewModel = ___VARIABLE_sceneName___SceneViewModel()
-        viewModel.coordinator = self
+        let viewModel = dependencies.makeViewModel(coordinator: self)
+        let scene = dependencies.makeScene(viewModel: viewModel)
         
-        let viewController = UIHostingController(rootView: ___VARIABLE_sceneName___Scene(viewModel: viewModel))
+        let viewController = UIHostingController(rootView: scene)
         
         navigationController.setViewControllers([viewController],
                                                 animated: false)
