@@ -39,7 +39,7 @@ public final class ___VARIABLE_sceneName___SceneDIContainer {
 
 extension ___VARIABLE_sceneName___SceneDIContainer: ___VARIABLE_sceneName___SceneCoordinatorDependencies {
 
-// MARK: - Methods
+    // MARK: - Methods
     
     @MainActor
     func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel {
