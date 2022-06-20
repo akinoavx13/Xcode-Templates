@@ -8,7 +8,6 @@
 
 import UIKit.UINavigationController
 import SwiftUI
-import Core
 
 protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject {
 
