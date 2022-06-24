@@ -10,12 +10,7 @@ import UIKit.UINavigationController
 
 final class ___VARIABLE_sceneName___SceneDIContainer {
     
-    struct Dependencies {
-
-        // MARK: - Lifecycle
-
-        init() { }
-    }
+    struct Dependencies { }
     
     // MARK: - Properties
     
