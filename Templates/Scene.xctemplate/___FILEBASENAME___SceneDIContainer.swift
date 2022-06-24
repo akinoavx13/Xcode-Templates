@@ -8,13 +8,13 @@
 
 import UIKit.UINavigationController
 
-public final class ___VARIABLE_sceneName___SceneDIContainer {
+final class ___VARIABLE_sceneName___SceneDIContainer {
     
-    public struct Dependencies {
+    struct Dependencies {
 
         // MARK: - Lifecycle
 
-        public init() { }
+        init() { }
     }
     
     // MARK: - Properties
@@ -23,13 +23,13 @@ public final class ___VARIABLE_sceneName___SceneDIContainer {
     
     // MARK: - Lifecycle
     
-    public init(dependencies: Dependencies) {
+    init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
     
     // MARK: - Methods
     
-    public func makeCoordinator(navigationController: UINavigationController) -> ___VARIABLE_sceneName___SceneCoordinator {
+    func makeCoordinator(navigationController: UINavigationController) -> ___VARIABLE_sceneName___SceneCoordinator {
         ___VARIABLE_sceneName___SceneCoordinator(navigationController: navigationController,
                              dependencies: self)
     }
