@@ -9,9 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - Components -</string>
+	<string>// MARK: - Components -
+
+extension &lt;# name #&gt; {
+    &lt;# content #&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>808760D4-7EF9-40C1-BD0B-5B548E49E477</string>
+	<string>8B6922CA-505D-4968-B242-36FBEAA3C96E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>

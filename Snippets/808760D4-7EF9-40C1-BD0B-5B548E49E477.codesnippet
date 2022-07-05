@@ -9,7 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - Views -</string>
+	<string>// MARK: - Views -
+
+extension &lt;# name #&gt; {
+    &lt;# content #&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>808760D4-7EF9-40C1-BD0B-5B548E49E477</string>
 	<key>IDECodeSnippetLanguage</key>
