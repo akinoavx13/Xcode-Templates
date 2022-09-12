@@ -7,14 +7,13 @@
 //
 
 public protocol CoordinatorProtocol: AnyObject {
-    
     // MARK: - Properties
-    
+
     var parentCoordinator: CoordinatorProtocol? { get set }
     var children: [CoordinatorProtocol] { get set }
-    
+
     // MARK: - Methods
-    
+
     func start(params: Any?...)
     func stop()
 }
