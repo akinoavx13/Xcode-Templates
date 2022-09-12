@@ -29,8 +29,10 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
 
     // MARK: - Lifecycle
     
-    init(navigationController: UINavigationController,
-         dependencies: ___VARIABLE_sceneName___SceneCoordinatorDependencies) {
+    init(
+        navigationController: UINavigationController,
+        dependencies: ___VARIABLE_sceneName___SceneCoordinatorDependencies
+    ) {
         self.navigationController = navigationController
         self.dependencies = dependencies
     }
@@ -44,8 +46,7 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
         
         let viewController = UIHostingController(rootView: scene)
         
-        navigationController.setViewControllers([viewController],
-                                                animated: false)
+        navigationController.setViewControllers([viewController], animated: false)
     }
     
     func stop() { fatalError("Should not be stopped.") }

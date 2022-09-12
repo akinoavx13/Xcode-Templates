@@ -25,8 +25,7 @@ final class ___VARIABLE_sceneName___SceneDIContainer {
     // MARK: - Methods
     
     func makeCoordinator(navigationController: UINavigationController) -> ___VARIABLE_sceneName___SceneCoordinator {
-        ___VARIABLE_sceneName___SceneCoordinator(navigationController: navigationController,
-                             dependencies: self)
+        ___VARIABLE_sceneName___SceneCoordinator(navigationController: navigationController, dependencies: self)
     }
 }
 
