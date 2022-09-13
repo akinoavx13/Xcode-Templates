@@ -31,7 +31,6 @@ final class ___VARIABLE_sceneName___SceneDIContainer {
 // MARK: - ___VARIABLE_sceneName___SceneCoordinatorDependencies -
 
 extension ___VARIABLE_sceneName___SceneDIContainer: ___VARIABLE_sceneName___SceneCoordinatorDependencies {
-
     // MARK: - Methods
 
     @MainActor
