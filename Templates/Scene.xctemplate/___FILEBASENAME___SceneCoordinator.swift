@@ -17,7 +17,7 @@ public protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject 
     func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene
 }
 
-public inal class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
+public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Properties
 
     public var parentCoordinator: CoordinatorProtocol?
