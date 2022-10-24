@@ -9,7 +9,7 @@
 import Combine
 
 @MainActor
-final class ___VARIABLE_sceneName___SceneViewModel: ObservableObject {
+public final class ___VARIABLE_sceneName___SceneViewModel: ObservableObject {
     // MARK: - Properties
 
     weak var coordinator: ___VARIABLE_sceneName___SceneCoordinator?
