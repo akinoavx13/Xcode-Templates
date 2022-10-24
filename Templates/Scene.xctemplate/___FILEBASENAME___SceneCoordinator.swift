@@ -42,7 +42,6 @@ public final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol
     public func start(params: Any?...) {
         let viewModel = dependencies.makeViewModel(coordinator: self)
         let scene = dependencies.makeScene(viewModel: viewModel)
-
         let viewController = UIHostingController(rootView: scene)
 
         navigationController.setViewControllers([viewController], animated: false)
