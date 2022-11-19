@@ -8,12 +8,8 @@
 
 import UIKit.UINavigationController
 
-public final class ___VARIABLE_sceneName___SceneDIContainer {
-    public struct Dependencies {
-        // MARK: - Lifecycle
-
-        public init() { }
-    }
+final class ___VARIABLE_sceneName___SceneDIContainer {
+    struct Dependencies {}
 
     // MARK: - Properties
 
@@ -21,13 +17,13 @@ public final class ___VARIABLE_sceneName___SceneDIContainer {
 
     // MARK: - Lifecycle
 
-    public init(dependencies: Dependencies) {
+    init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
 
     // MARK: - Methods
 
-    public func makeCoordinator(navigationController: UINavigationController) -> ___VARIABLE_sceneName___SceneCoordinator {
+    func makeCoordinator(navigationController: UINavigationController) -> ___VARIABLE_sceneName___SceneCoordinator {
         ___VARIABLE_sceneName___SceneCoordinator(navigationController: navigationController, dependencies: self)
     }
 }
@@ -38,14 +34,14 @@ extension ___VARIABLE_sceneName___SceneDIContainer: ___VARIABLE_sceneName___Scen
     // MARK: - Methods
 
     @MainActor
-    public func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel {
+    func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel {
         let viewModel = ___VARIABLE_sceneName___SceneViewModel()
         viewModel.coordinator = coordinator
 
         return viewModel
     }
 
-    public func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene {
+    func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene {
         ___VARIABLE_sceneName___Scene(viewModel: viewModel)
     }
 }

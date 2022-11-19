@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-public struct ___VARIABLE_sceneName___Scene: View {
+struct ___VARIABLE_sceneName___Scene: View {
     // MARK: - Properties
 
     @StateObject var viewModel: ___VARIABLE_sceneName___SceneViewModel
 
     // MARK: - Body
 
-    public var body: some View {
+    var body: some View {
         Text("Hello, World")
     }
 }
