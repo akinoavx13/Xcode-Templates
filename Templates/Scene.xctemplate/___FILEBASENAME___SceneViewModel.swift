@@ -17,8 +17,8 @@ final class ___VARIABLE_sceneName___SceneViewModel: ObservableObject {
 
 #if DEBUG
 
-extension ___VARIABLE_sceneName___SceneViewModel {
-    static let preview = ___VARIABLE_sceneName___SceneViewModel()
-}
+    extension ___VARIABLE_sceneName___SceneViewModel {
+        static let preview = ___VARIABLE_sceneName___SceneViewModel()
+    }
 
 #endif

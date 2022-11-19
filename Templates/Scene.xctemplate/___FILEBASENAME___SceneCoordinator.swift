@@ -6,9 +6,8 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-import UIKit.UINavigationController
 import SwiftUI
-import Core
+import UIKit.UINavigationController
 
 protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject {
     // MARK: - Methods
@@ -39,7 +38,7 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Methods
 
     @MainActor
-    func start(params: Any?...) {
+    func start(params _: Any?...) {
         let viewModel = dependencies.makeViewModel(coordinator: self)
         let scene = dependencies.makeScene(viewModel: viewModel)
         let viewController = UIHostingController(rootView: scene)
