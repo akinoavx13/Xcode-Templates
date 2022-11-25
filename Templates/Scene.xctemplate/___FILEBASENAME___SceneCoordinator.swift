@@ -19,7 +19,7 @@ protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject {
 final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Properties
 
-    var parentCoordinator: CoordinatorProtocol?
+    weak var parentCoordinator: CoordinatorProtocol?
     var children: [CoordinatorProtocol] = []
 
     private let navigationController: UINavigationController
