@@ -27,9 +27,7 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
 
     @MainActor
     func start(params _: Any?...) {
-        let viewModel = ___VARIABLE_sceneName___SceneViewModel()
-        viewModel.coordinator = self
-
+        let viewModel = ___VARIABLE_sceneName___SceneViewModel(coordinator: self)
         let scene = ___VARIABLE_sceneName___Scene(viewModel: viewModel)
         let viewController = UIHostingController(rootView: scene)
 

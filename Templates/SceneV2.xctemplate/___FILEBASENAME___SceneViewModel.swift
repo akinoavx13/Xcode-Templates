@@ -12,7 +12,13 @@ import Combine
 final class ___VARIABLE_sceneName___SceneViewModel: ObservableObject {
     // MARK: - Properties
 
-    weak var coordinator: ___VARIABLE_sceneName___SceneCoordinator?
+    private weak var coordinator: ___VARIABLE_sceneName___SceneCoordinator?
+
+    // MARK: - Lifecycle
+
+    init(coordinator: ___VARIABLE_sceneName___SceneCoordinator? = nil) {
+        self.coordinator = coordinator
+    }
 }
 
 #if DEBUG
