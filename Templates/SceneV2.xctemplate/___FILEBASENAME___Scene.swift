@@ -20,12 +20,8 @@ struct ___VARIABLE_sceneName___Scene: View {
     }
 }
 
-#if DEBUG
-
-    struct ___VARIABLE_sceneName___Scene_Previews: PreviewProvider {
-        static var previews: some View {
-            ___VARIABLE_sceneName___Scene(viewModel: ___VARIABLE_sceneName___SceneViewModel.preview)
-        }
+struct ___VARIABLE_sceneName___Scene_Previews: PreviewProvider {
+    static var previews: some View {
+        ___VARIABLE_sceneName___Scene(viewModel: ___VARIABLE_sceneName___SceneViewModel.preview)
     }
-
-#endif
+}
