@@ -11,7 +11,7 @@ import SwiftUI
 struct ___VARIABLE_sceneName___Scene: View {
     // MARK: - Properties
 
-    @StateObject var viewModel: ___VARIABLE_sceneName___SceneViewModel
+    @ObservedObject var viewModel: ___VARIABLE_sceneName___SceneViewModel
 
     // MARK: - Body
 
