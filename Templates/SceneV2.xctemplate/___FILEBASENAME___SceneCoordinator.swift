@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import UIKit.UINavigationController
+import UIKit
 
 final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Properties
