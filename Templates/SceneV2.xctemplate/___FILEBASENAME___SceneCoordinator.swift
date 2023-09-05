@@ -15,12 +15,12 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     weak var parentCoordinator: CoordinatorProtocol?
     var children: [CoordinatorProtocol] = []
 
-    private let navigationController: UINavigationController
+    private let parentNavigationController: UINavigationController
 
     // MARK: - Lifecycle
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(parentNavigationController: UINavigationController) {
+        self.parentNavigationController = parentNavigationController
     }
 
     // MARK: - Methods
@@ -33,7 +33,7 @@ final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
         let scene = ___VARIABLE_sceneName___Scene(viewModel: viewModel)
         let viewController = UIHostingController(rootView: scene)
 
-        navigationController.setViewControllers([viewController], animated: false)
+        parentNavigationController.setViewControllers([viewController], animated: false)
     }
 
     func stop() { fatalError("Should not be stopped.") }
