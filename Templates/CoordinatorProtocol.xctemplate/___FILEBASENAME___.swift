@@ -19,7 +19,6 @@ protocol CoordinatorProtocol: AnyObject {
     func stop()
 }
 
-@MainActor
 extension CoordinatorProtocol {
     func childDidStop(_ child: CoordinatorProtocol?) {
         for (index, coordinator) in children.enumerated() where coordinator === child {
