@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>DefaultCompletionName</key>
-    <string>MyScene</string>
+    <string>Scene</string>
     <key>Description</key>
     <string>This generates a new scene using clean architecture and coordinators. It consists of the view controller, view model and a coordinator.</string>
     <key>Summary</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Coordinator</string>
+	<string>CoordinatorProtocol</string>
 	<key>Description</key>
 	<string>A default Coordinator protocol implementation.</string>
 	<key>Summary</key>

@@ -7,43 +7,33 @@
 //
 
 import SwiftUI
-import UIKit.UINavigationController
+import UIKit
 
-protocol ___VARIABLE_sceneName___SceneCoordinatorDependencies: AnyObject {
-    // MARK: - Methods
-
-    func makeViewModel(coordinator: ___VARIABLE_sceneName___SceneCoordinator?) -> ___VARIABLE_sceneName___SceneViewModel
-    func makeScene(viewModel: ___VARIABLE_sceneName___SceneViewModel) -> ___VARIABLE_sceneName___Scene
-}
-
+@MainActor
 final class ___VARIABLE_sceneName___SceneCoordinator: CoordinatorProtocol {
     // MARK: - Properties
 
     weak var parentCoordinator: CoordinatorProtocol?
     var children: [CoordinatorProtocol] = []
 
-    private let navigationController: UINavigationController
-    private let dependencies: ___VARIABLE_sceneName___SceneCoordinatorDependencies
+    private let parentNavigationController: UINavigationController
 
     // MARK: - Lifecycle
 
-    init(
-        navigationController: UINavigationController,
-        dependencies: ___VARIABLE_sceneName___SceneCoordinatorDependencies
-    ) {
-        self.navigationController = navigationController
-        self.dependencies = dependencies
+    init(parentNavigationController: UINavigationController) {
+        self.parentNavigationController = parentNavigationController
     }
 
     // MARK: - Methods
 
-    @MainActor
     func start(params _: Any?...) {
-        let viewModel = dependencies.makeViewModel(coordinator: self)
-        let scene = dependencies.makeScene(viewModel: viewModel)
+        let viewModel = ___VARIABLE_sceneName___SceneViewModel()
+        viewModel.coordinator = self
+
+        let scene = ___VARIABLE_sceneName___Scene(viewModel: viewModel)
         let viewController = UIHostingController(rootView: scene)
 
-        navigationController.setViewControllers([viewController], animated: false)
+        parentNavigationController.setViewControllers([viewController], animated: false)
     }
 
     func stop() { fatalError("Should not be stopped.") }
