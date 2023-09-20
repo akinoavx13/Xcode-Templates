@@ -6,7 +6,8 @@
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
 
-public protocol CoordinatorProtocol: AnyObject {
+@MainActor
+protocol CoordinatorProtocol: AnyObject {
     // MARK: - Properties
 
     var parentCoordinator: CoordinatorProtocol? { get set }
@@ -18,9 +19,8 @@ public protocol CoordinatorProtocol: AnyObject {
     func stop()
 }
 
-// MARK: - ChildDidStop -
-
-public extension CoordinatorProtocol {
+@MainActor
+extension CoordinatorProtocol {
     func childDidStop(_ child: CoordinatorProtocol?) {
         for (index, coordinator) in children.enumerated() where coordinator === child {
             children.remove(at: index)
