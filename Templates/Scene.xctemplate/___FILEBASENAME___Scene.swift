@@ -25,5 +25,5 @@ struct ___VARIABLE_sceneName___Scene: View {
     #Preview {
         ___VARIABLE_sceneName___Scene(viewModel: ___VARIABLE_sceneName___SceneViewModel.preview)
     }
-            
+
 #endif
