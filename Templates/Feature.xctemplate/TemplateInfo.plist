@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>DefaultCompletionName</key>
+    <string>Feature</string>
+    <key>Description</key>
+    <string>This generates the basic scaffolding for a feature. Reducer and it's associated view.</string>
+    <key>Summary</key>
+	<string>This generates the basic scaffolding for a feature. Reducer and it's associated view.</string>
+    <key>Kind</key>
+    <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+    <key>SortOrder</key>
+	<string>1</string>
+    <key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the feature to create</string>
+			<key>Identifier</key>
+			<string>feature_name</string>
+			<key>Name</key>
+			<string>Feature name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_feature_name:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_feature_name:identifier___Feature</string>
+			<key>Description</key>
+			<string>Feature name</string>
+			<key>Identifier</key>
+			<string>featureName</string>
+			<key>Name</key>
+			<string>Feature name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+</dict>
+</plist>
