@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>feature</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import ComposableArchitecture
+import SwiftUI
+
+@Reducer
+struct &lt;# Name #&gt;Feature {
+    // MARK: - State
+
+    @ObservableState
+    struct State: Equatable {}
+
+    // MARK: - Action
+
+    enum Action {}
+
+    // MARK: - Body
+
+    var body: some ReducerOf&lt;Self&gt; {
+        Reduce { _, action in
+            switch action {
+            default:
+                return .none
+            }
+        }
+    }
+}
+
+struct &lt;# Name #&gt;FeatureView: View {
+    // MARK: - Properties
+
+    let store: StoreOf&lt;&lt;# Name #&gt;Feature&gt;
+
+    // MARK: - Body
+
+    var body: some View {
+        Text(verbatim: "&lt;# Name #&gt;Feature")
+    }
+}
+
+#Preview {
+    &lt;# Name #&gt;FeatureView(store: Store(initialState: &lt;# Name #&gt;Feature.State()) {
+        &lt;# Name #&gt;Feature()
+    })
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3CDDAD16-9A89-4C09-9416-648FA2C96802</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Create TCA Feature</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
