@@ -17,11 +17,19 @@ public struct &lt;# Name #&gt;Feature {
     // MARK: - State
 
     @ObservableState
-    public struct State: Equatable {}
+    public struct State: Equatable {
+        // MARK: - Lifecycle
+
+        public init() {}
+    }
 
     // MARK: - Action
 
     public enum Action {}
+
+    // MARK: - Lifecycle
+
+    public init() {}
 
     // MARK: - Body
 
