@@ -13,27 +13,19 @@
 import SwiftUI
 
 @Reducer
-public struct &lt;# Name #&gt;Feature {
+struct &lt;# Name #&gt;Feature {
     // MARK: - State
 
     @ObservableState
-    public struct State: Equatable {
-        // MARK: - Lifecycle
-
-        public init() {}
-    }
+    struct State: Equatable {}
 
     // MARK: - Action
 
-    public enum Action {}
-
-    // MARK: - Lifecycle
-
-    public init() {}
+    enum Action {}
 
     // MARK: - Body
 
-    public var body: some ReducerOf&lt;Self&gt; {
+    var body: some ReducerOf&lt;Self&gt; {
         Reduce { _, action in
             switch action {
             default:
@@ -43,20 +35,14 @@ public struct &lt;# Name #&gt;Feature {
     }
 }
 
-public struct &lt;# Name #&gt;FeatureView: View {
+struct &lt;# Name #&gt;FeatureView: View {
     // MARK: - Properties
 
-    private let store: StoreOf&lt;&lt;# Name #&gt;Feature&gt;
+    let store: StoreOf&lt;&lt;# Name #&gt;Feature&gt;
 
-    // MARK: - Lifecycle
-
-    public init(store: StoreOf&lt;&lt;# Name #&gt;Feature&gt;) {
-        self.store = store
-    }
-    
     // MARK: - Body
 
-    public var body: some View {
+    var body: some View {
         Text(verbatim: "&lt;# Name #&gt;Feature")
     }
 }
